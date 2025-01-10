@@ -8,7 +8,7 @@ let capture;
 
 function setup() {
   
-  createCanvas(screen.width, screen.height);
+  createCanvas(displayWidth, displayHeight);
   capture = createCapture(VIDEO);
   capture.size(s, s);
 }
@@ -23,13 +23,13 @@ function draw() {
   if (x<0) {
     xv = 1;
   }
-  if (x>(screen.width-s)) {
+  if (x>(displayWidth-s)) {
     xv = -1;
   }
     if (y<0) {
     yv = 1;
   }
-  if (y>(screen.height-s)) {
+  if (y>(displayHeight-s)) {
     yv = -1;
   }
 }
